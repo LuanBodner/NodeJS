@@ -1,9 +1,9 @@
-const http = require('http');
-const fs = require('fs');
+var http = require('http');
+var fs = require('fs');
 
 var server = http.createServer(function(request, response) {
 
-  if (request.url === '/home' || request.url === '/') {
+  if (request.url === '/home' || request.url === '/' || request.url === '/face') {
     response.writeHead(200, {
       'Content-Type': 'text/html'
     });
