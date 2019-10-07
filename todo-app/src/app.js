@@ -20,7 +20,7 @@ function mainResponse(request, response) {
     response.json(result.rows[0]);
   });
   pool.end();
-  asdasd
+
   console.log(ok);
 }
 
